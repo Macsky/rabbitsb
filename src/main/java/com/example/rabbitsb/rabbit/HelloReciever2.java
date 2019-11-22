@@ -7,17 +7,16 @@ import org.springframework.stereotype.Component;
 
 @Component
 @RabbitListener(queues = "q_hello")
-public class HelloReceiver {
+public class HelloReciever2 {
 
 
-        @RabbitHandler
-        public void process(String hello){
-            String threadName = Thread.currentThread().getName();
-            System.out.println("HelloReceiver 消费了："+hello);
-        }
+    @RabbitHandler
+    public void hello(String hello){
 
+        String threadName = Thread.currentThread().getName();
+        System.out.println("HelloReciever2 消费了："+hello);
 
-
+    }
 
 
 }

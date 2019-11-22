@@ -18,9 +18,6 @@ public class RabbitMqTest {
     private AmqpTemplate rabbitTemplate;
 
 
-    //@Autowired
-   //private HelloReceiver helloReceiver;
-
     @Autowired
     private HelloSender helloSender;
 
@@ -29,12 +26,6 @@ public class RabbitMqTest {
         helloSender.sender();
     }
 
-
-    @Test
-    public void consumer(){
-
-
-    }
 
 
 

@@ -15,7 +15,7 @@ public class HelloSender {
 
     public void sender() {
         System.out.println("put message into rabbitMq beginning------");
-        for (int i = 0; i <100 ; i++) {
+        for (int i = 0; i <10000 ; i++) {
             String message="hello world rabbit "+i;
             //简单队列的routing_key 就是队列名称
             this.rabbitTemplate.convertAndSend(ROUTING_KEY,message);
