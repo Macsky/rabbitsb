@@ -8,6 +8,7 @@ class RabbitsbApplicationTests {
 
     @Test
     void contextLoads() {
+         int i=100;
     }
 
 }
