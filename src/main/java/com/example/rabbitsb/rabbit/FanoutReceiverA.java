@@ -27,8 +27,6 @@ class FanoutReceiverB{
         System.out.println("fanout receiver B:::"+hello);
     }
 
-
-
 }
 
 
