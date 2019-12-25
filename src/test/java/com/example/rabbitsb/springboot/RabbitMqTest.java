@@ -46,6 +46,12 @@ public class RabbitMqTest {
     }
 
 
-
-
+    @Override
+    public String toString() {
+        return "RabbitMqTest{" +
+                "rabbitTemplate=" + rabbitTemplate +
+                ", helloSender=" + helloSender +
+                ", msgSender=" + msgSender +
+                '}';
+    }
 }
